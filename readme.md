@@ -1,12 +1,6 @@
 从0搭建起react项目：
 
-开源一款大型复杂中后台表单交互场景，
-
-使用阿里巴巴fusion组件库：@alife/ascp-design
-
-基于formily2实现复杂表单交互
-
-未来涉及到的知识：
+未来会涉及到的知识：
 
 - react
 - react-router
@@ -20,7 +14,20 @@
 - 打包优化
 - promise
 - axios
+- ......
 
+
+目的：解决在大型中后台复杂表单的交互场景和联动处理，使用阿里巴巴fusion组件库、基于formily2技术，完成以上功能。
+
+官网上讲解的太过宽泛复杂，希望通过本项目能够让
+
+
+
+
+
+
+
+以下摘抄：https://github.com/bailicangdu/react-pxq/
 
 ## 做React需要会什么？
 
@@ -40,7 +47,7 @@ react的diff算法用在什么地方呢？当组件更新的时候，react会创
 
 对于列表的diff算法稍有不同，因为列表通常具有相同的结构，在对列表节点进行删除，插入，排序的时候，单个节点的整体操作远比一个个对比一个个替换要好得多，所以在创建列表的时候需要设置key值，这样react才能分清谁是谁。当然不写key值也可以，但这样通常会报出警告，通知我们加上key值以提高react的性能。
 
-[![](https://github.com/bailicangdu/pxq/raw/master/screenshot/diff.png)](https://github.com/bailicangdu/pxq/blob/master/screenshot/diff.png)
+[![1](https://github.com/bailicangdu/pxq/raw/master/screenshot/diff.png)](https://github.com/bailicangdu/pxq/blob/master/screenshot/diff.png)
 
 ## React组件是怎么来的
 
@@ -56,7 +63,7 @@ react的diff算法用在什么地方呢？当组件更新的时候，react会创
 
 ## 组件的生命周期
 
-[![](https://github.com/bailicangdu/pxq/raw/master/screenshot/react-lifecycle.png)](https://github.com/bailicangdu/pxq/blob/master/screenshot/react-lifecycle.png)
+[![2](https://github.com/bailicangdu/pxq/raw/master/screenshot/react-lifecycle.png)](https://github.com/bailicangdu/pxq/blob/master/screenshot/react-lifecycle.png)
 
 **组件在初始化时会触发5个钩子函数：**
 
@@ -166,7 +173,7 @@ react推崇的是单向数据流，自上而下进行数据的传递，但是由
 
 #### 流程是这个样子的：
 
-[![](https://github.com/bailicangdu/pxq/raw/master/screenshot/simple_redux.jpg)](https://github.com/bailicangdu/pxq/blob/master/screenshot/simple_redux.jpg)
+[![3](https://github.com/bailicangdu/pxq/raw/master/screenshot/simple_redux.jpg)](https://github.com/bailicangdu/pxq/blob/master/screenshot/simple_redux.jpg)
 
 值得注意的是connect，Provider，mapStateToProps,mapDispatchToProps是react-redux提供的，redux本身和react没有半毛钱关系，它只是数据处理中心，没有和react产生任何耦合，是react-redux让它们联系在一起。
 
@@ -174,7 +181,7 @@ react推崇的是单向数据流，自上而下进行数据的传递，但是由
 
 #### 先上一张图
 
-[![](https://github.com/bailicangdu/pxq/raw/master/screenshot/all_redux.png)](https://github.com/bailicangdu/pxq/blob/master/screenshot/all_redux.png)
+[![4](https://github.com/bailicangdu/pxq/raw/master/screenshot/all_redux.png)](https://github.com/bailicangdu/pxq/blob/master/screenshot/all_redux.png)
 
 明显比第一张要复杂，其实两张图说的是同一件事。从上而下慢慢分析：
 
